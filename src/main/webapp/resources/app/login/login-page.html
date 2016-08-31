@@ -1,0 +1,21 @@
+<div class="form">
+<form>
+	 <div align="center"
+		style="margin:0px auto; width: 300px; background-color: #FF7600; border-radius: 5px;"
+		ng-show="inValidLoginError">{{invalidLoginMsg}}</div> 
+		<p class="contact"><label for="username">UserName :</label></p> 
+    			<input type="text" name="uname" ng-model="user.username" placeholder="username" required="" tabindex="2" id="username"  > 
+    			 
+                <p class="contact"><label for="password">Password :</label></p> 
+    			<input type="password" name="password" id="password"   placeholder="password" ng-model="user.password"  required=""/> 
+	<br>
+	<table align="center">
+		<tr>
+			<td><input class="buttom" type="submit" value="Login" name="login"
+				ng-click="login()" />&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;<input class="buttom" type="submit" value="New User ? Register Now"
+				name="register" ng-click="registerNow()" /></td>
+		</tr>
+	</table>
+</form>
+</div>

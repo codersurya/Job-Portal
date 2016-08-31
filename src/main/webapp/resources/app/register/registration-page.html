@@ -1,0 +1,31 @@
+<div class="container">  
+      <div  class="form">
+      	<h1>Registration</h1>
+    		<form id="contactform"> 
+    		<div align="center"
+		style="margin:0px auto; width: 300px; background-color: #FF7600; border-radius: 5px;"
+		ng-show="isPwdsNotSameError">Paswords mismatch</div>
+			<div align="center"
+		style="margin:0px auto; width: 300px; background-color: orange; border-radius: 5px;"
+		ng-show="isRegisterFailError">{{registerFailErrMsg}}</div>
+    			<p class="contact"><label for="name">Name</label></p> 
+    			<input id="name" name="name" ng-model="registerUser.fullname"  placeholder="First and last name" required="" tabindex="1" type="text"> 
+    			 
+    			<p class="contact"><label for="email">Email</label></p> 
+    			<input id="email" name="email" ng-model="registerUser.email" placeholder="example@domain.com" required="" type="email"> 
+                
+                <p class="contact"><label for="username">Create a username</label></p> 
+    			<input id="username" name="username" ng-model="registerUser.username"  placeholder="username" required="" tabindex="2" type="text"> 
+    			 
+                <p class="contact"><label for="password">Create a password</label></p> 
+    			<input type="password" id="password" name="password" required="" ng-model="registerUser.password" > 
+                <p class="contact"><label for="repassword">Confirm your password</label></p> 
+    			<input type="password" id="repassword" name="repassword" required="" ng-model="rePassword" > 
+        
+            <p class="contact"><label for="phone">Mobile phone</label></p> 
+            <input id="phone" name="phone" placeholder="phone number" required="" type="text" ng-model="registerUser.mobile" > <br>
+            <input class="buttom" name="submit" id="submit" tabindex="5" value="Register" type="submit" ng-click="register()"/> 	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="buttom" type="submit" value="Cancel" name="cancel" ng-click="cancel()" />
+   </form> 
+</div>      
+</div>

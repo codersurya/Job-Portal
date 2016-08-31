@@ -1,0 +1,26 @@
+<div class="container">
+	<div class="form">
+		<h1>Job Search</h1>
+		<form id="searchform">
+			<p class="contact">
+				<label for="Search for Job">Search for a Job</label>
+			</p>
+			<input id="keyword" name="keyword" ng-model="keyword"
+				placeholder="Enter a keyword" required="" tabindex="1" type="text">
+			<input class="buttom" name="submit" id="submit" tabindex="5"
+				value="Search" type="submit" ng-click="searchJob()" />
+
+		</form>
+
+
+
+		<div ng-repeat="job in jobList" style="border: 1px solid aqua; background: aliceblue; padding: 8px; margin: 8px;">
+			<p style="font-weight: bold; font-size: large;"><a href={{job.jobLink}} target="_blank">{{job.jobTitle}}</a></p><br/>
+			<span><b>Job Description : </b>{{job.jobDesc}}</span><br/>
+			<span><b>Location : </b>{{job.location}}</span>
+		</div>
+
+
+	</div>
+</div>
+

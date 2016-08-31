@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">uE6*hQ8!</property>
+		<property name="hibernate.connection.url">jdbc:mysql://sql6.freesqldatabase.com/sql693114</property>
+		<property name="hibernate.connection.username">sql693114</property>
+		<property name="hibernate.default_schema">JobPortal</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+	</session-factory>
+</hibernate-configuration>
+ 
